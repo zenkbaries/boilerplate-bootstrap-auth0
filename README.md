@@ -1,6 +1,6 @@
-# React Boilerplate
+# React Boilerplate with Atho0 and Bootstrap
 
-This is a React app boilerplate with Auth0.
+This is a React app boilerplate with Auth0 and bootstrap.
 
 Feel free to use this boilerplate.  To use it, clone this repository and then complete all items in the [What's Next](#whats-next) section. 
 
@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Auth0](https://auth0.com/) is a flexible, drop-in solution to add authentication and authorization services to your applications. 
 Read this guide, ["React:Login"](https://auth0.com/docs/quickstart/spa/react), to understand how it was implemented and to better understand it. Use it as a guide to help you customize your app.
+
+[Bootstrap 4.0](https://getbootstrap.com/)
 
 # What's next:
 
