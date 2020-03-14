@@ -9,21 +9,19 @@ const NavBar = () => {
 
   return (
     
-    <div>
-      {!isAuthenticated && (
-        <button onClick={() => loginWithRedirect({})}>Log in</button>
-      )}
-
-      {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
-      {isAuthenticated && (
-        <span>
-          <Link to="/">Home</Link>&nbsp;
-          <Link to="/profile">Profile</Link>
-          <Link to="/external-api">External API</Link>
-        </span>
-      )}
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link className="nav-link" to="/">Home</Link>
       
-    </div>
+      <div className="navbar-nav mr-auto">
+      {isAuthenticated && <Link className="nav-link nav-item" to="/profile">Profile</Link>}
+      {isAuthenticated && <Link className="nav-link nav-item" to="/external-api">External API</Link>}
+      </div>
+      {!isAuthenticated && <button onClick={() => loginWithRedirect({})}>Log in</button>}
+      {isAuthenticated && <div className="nav-link nav-item" ><button onClick={() => logout()}>Log out</button></div>}
+      
+
+      
+    </nav>
   );
 };
 
