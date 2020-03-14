@@ -30,7 +30,7 @@ function App() {
           <PrivateRoute path="/profile" component={Profile} />
           <PrivateRoute path="/external-api" component={ExternalApi} />
         </Switch>
-      </Router>        
+      </Router>
     </div>
   );
 }
