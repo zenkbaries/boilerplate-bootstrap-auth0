@@ -1,7 +1,10 @@
 // src/components/Profile.js
 
+// TODO: Need to bootstrap the profile to present it clean
+
 import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
+import JSONPretty from 'react-json-pretty';
 
 const Profile = () => {
   const { loading, user } = useAuth0();
@@ -16,7 +19,7 @@ const Profile = () => {
 
       <h2>{user.name}</h2>
       <p>{user.email}</p>
-      <code>{JSON.stringify(user, null, 2)}</code>
+      <JSONPretty id="json-pretty" data={JSON.stringify(user, null, 2)}></JSONPretty>
     </Fragment>
   );
 };
