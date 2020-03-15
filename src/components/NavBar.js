@@ -16,8 +16,8 @@ const NavBar = () => {
       {isAuthenticated && <Link className="nav-link nav-item" to="/profile">Profile</Link>}
       {isAuthenticated && <Link className="nav-link nav-item" to="/external-api">External API</Link>}
       </div>
-      {!isAuthenticated && <button onClick={() => loginWithRedirect({})}>Log in</button>}
-      {isAuthenticated && <div className="nav-link nav-item" ><button onClick={() => logout()}>Log out</button></div>}
+      {!isAuthenticated && <button className="btn btn-outline-success" onClick={() => loginWithRedirect({})}>Log in</button>}
+      {isAuthenticated && <div className="nav-link nav-item" ><button className="btn btn-outline-success" onClick={() => logout()}>Log out</button></div>}
       
 
       
